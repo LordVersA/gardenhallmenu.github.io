@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Scrollable Images</title>
+    <title>Gardenhall Menu</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden; 
         }
         .image-container {
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            overflow-y: scroll; /* Allow vertical scrolling */
+            width: 100vw; 
+            height: 100vh; 
+            overflow-y: scroll; 
         }
         .image-container img {
-            width: 100%; /* Full width of the container */
-            display: block; /* Removes the bottom gap between images */
+            width: 100%; 
+            display: block; 
         }
-        /* Hide scrollbar for Webkit browsers */
+
         .image-container::-webkit-scrollbar {
             width: 0px;
-            background: transparent; /* make scrollbar transparent */
+            background: transparent;
         }
-        /* Hide scrollbar for IE, Edge and Firefox */
+   
         .image-container {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
         }
     </style>
 </head>
@@ -36,5 +36,5 @@
         <img src="menu_1.JPG" alt="First Image">
         <img src="menu_2.JPG" alt="Second Image">
     </div>
-</body>
+    /* versa was here */
 </html>
