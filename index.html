@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Scrollable Images</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .image-container {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            overflow-y: scroll; /* Allow vertical scrolling */
+        }
+        .image-container img {
+            width: 100%; /* Full width of the container */
+            display: block; /* Removes the bottom gap between images */
+        }
+        /* Hide scrollbar for Webkit browsers */
+        .image-container::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* make scrollbar transparent */
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .image-container {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="menu_1.JPG" alt="First Image">
+        <img src="menu_2.JPG" alt="Second Image">
+    </div>
+</body>
+</html>
